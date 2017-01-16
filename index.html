@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<h3>双向数据绑定demo</h3>
+<div id="wrap">
+	<input type="text" v-model='demo'>
+	<h6 v-text='demo'></h6>
+</div>
+
+<script src='vue.js'></script>
+
+<script>
+	new Vue({
+		el:'#wrap',
+		data:{
+			demo:'beidan'
+		}
+	})
+</script>
+
+</body>
+</html>
